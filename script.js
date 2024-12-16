@@ -1,31 +1,31 @@
 //Generate Prefix
 function genPrefix (firstName) {
     if (firstName.length > 5) {
-      return 'The Great'
+      return 'Legendary'
     } else {
-      return 'Master'
+      return 'Mastered'
     }
   }
   //generate first name
   function genFirstName (firstName) {
     const firstLetter = firstName.charAt(0).toLowerCase()
     if (firstLetter === 'a') {
-      return 'Jeff'
+      return 'Extreme'
     } else if (firstLetter === 'b') {
-      return 'Pablo'
+      return 'Sparking'
     } else {
-      return 'Julian'
+      return 'Uber'
     }
   }
   
   //generate middle name
   function genMiddleName (roadType, favoriteColor) {
     if (roadType === 'road') {
-      return `${favoriteColor}ridge` //EX:  blueridge
+      return `${favoriteColor}Gem` //EX:  blueridge
     } else if (roadType === 'street') {
-      return `${favoriteColor}son` //EX: blueson
+      return `${favoriteColor}Prismatic` //EX: blueson
     } else {
-      return `${favoriteColor}stone` //EX: bluestone
+      return `${favoriteColor}Rune` //EX: bluestone
     }
   }
   
@@ -35,21 +35,21 @@ function genPrefix (firstName) {
     if (lastLetter === 'a') {
       return 'Shadow'
     } else if (lastLetter === 'e') {
-      return 'Storm'
+      return 'Plasmatic'
     } else if (lastLetter === 'i') {
-      return 'Blaze'
+      return 'Mechanical'
     } else if (lastLetter === 'o') {
-      return 'Thorn'
+      return 'Crystalline'
     } else if (lastLetter === 'u') {
-      return 'Frost'
+      return 'Poisonous'
     } else {
-      return 'Moon' // Default last name for letters not matched
+      return 'Ethereal' // Default last name for letters not matched
     }
   }
   
   //generate Suffix
   function genSuffix (favoriteAnimal) {
-    return `of ${favoriteAnimal} clan.`
+    return `${favoriteAnimal} Powered-Ultra-Mega-Super-Hyper-Refined-Synthesiser.`
   }
   
   //MAster Name Building FUnction
