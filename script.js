@@ -20,9 +20,9 @@ function genPrefix (firstName) {
   
   //generate middle name
   function genMiddleName (roadType, favoriteColor) {
-    if (roadType === 'road') {
+    if (roadType === 'road' && 'avenue') {
       return `${favoriteColor}Gem` //EX:  blueridge
-    } else if (roadType === 'street') {
+    } else if (roadType === 'street' && 'circle') {
       return `${favoriteColor}Prismatic` //EX: blueson
     } else {
       return `${favoriteColor}Rune` //EX: bluestone
@@ -32,15 +32,15 @@ function genPrefix (firstName) {
   //generate Last Name
   function genLastName (lastName) {
     const lastLetter = lastName.charAt(lastName.length - 1)
-    if (lastLetter === 'a') {
+    if (lastLetter === 'a' || 's') {
       return 'Shadow'
-    } else if (lastLetter === 'e') {
+    } else if (lastLetter === 'e' || 'b') {
       return 'Plasmatic'
-    } else if (lastLetter === 'i') {
+    } else if (lastLetter === 'i' || 't') {
       return 'Mechanical'
-    } else if (lastLetter === 'o') {
+    } else if (lastLetter === 'o' || 'p') {
       return 'Crystalline'
-    } else if (lastLetter === 'u') {
+    } else if (lastLetter === 'u' || 'g') {
       return 'Poisonous'
     } else {
       return 'Ethereal' // Default last name for letters not matched
@@ -49,7 +49,7 @@ function genPrefix (firstName) {
   
   //generate Suffix
   function genSuffix (favoriteAnimal) {
-    return `${favoriteAnimal} Powered-Ultra-Mega-Super-Hyper-Refined-Synthesiser.`
+    return `${favoriteAnimal} Powered-Ultra-Mega-Super-Hyper-Refined!`
   }
   
   //MAster Name Building FUnction

@@ -19,34 +19,48 @@
     </header>
     <main>
         <div class="container">
+            <div class="row">
+                <div class="col-lg-12 md-12 sm-12">
             <!--Instructions-->
             <div class="text-center mb-4">
                 <h1>Wacky Tier Generator</h1>
                 <p>Fill out the form below to unlock your Synthesized Tier!</p>
             </div>
+            </div>
+        </div>
             <!-- Form Section-->
+            <div class="row">
+                <div class="col-lg-3 md-6 sm-12">
             <form id="fantasyForm" class="mb-4">
                 <!-- Get First Name-->
                 <div class="mb-3">
                     <label for="firstName" class="form-label">First Name</label>
                     <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
                 </div>
+            </div>
                 <!-- Get Last Name-->
+                <div class="col-lg-3 md-6 sm-12">
                 <div class="mb-3">
-                    <label for="firstName" class="form-label">First Name</label>
+                    <label for="firstName" class="form-label">Last Name</label>
                     <input type="text" class="form-control" id="lastName" placeholder="Enter your first name" required>
                 </div>
+            </div>
                 <!-- Get FavColor-->
+                <div class="col-lg-2 md-4 sm-12">
                 <div class="mb-3">
                     <label for="favoriteColor" class="form-label">Favorite Color</label>
                     <input type="text" class="form-control" id="favoriteColor" placeholder="Enter your favorite color" required>
                 </div>
+            </div>
                 <!-- Get FavAnimal-->
+                <div class="col-lg-2 md-4 sm-12">
                 <div class="mb-3">
                     <label class="form-label">Favorite Animal</label>
                     <input type="text" class="form-control" id="favoriteAnimal" placeholder="Enter your favorite animal" required>
                 </div>
+            </div>
                 <!-- Get roadType-->
+                <div class="col-lg-2 md-4 sm-12">
                 <div class="mb-3">
                     <label class="form-label">Choose Road Type</label>
                     <select id="roadType" class="form-select">
@@ -58,6 +72,7 @@
                         <option value="other">Other</option>
                     </select>
                 </div>
+            </div>
                 <!--Submit Button-->
                 <div type="submit" class="btn btn-primary w-100" onclick="genFullName()">Generate Name</div>
             </form>
